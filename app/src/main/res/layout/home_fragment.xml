@@ -27,6 +27,8 @@
         <!-- the pixels will scale based on the default text size the user configured on their phone -->
         <!-- you should never use sp for layouts like margin or padding-->
 
+<!--    apply the appropriate styles to the title and subtitle-->
+<!--    get rid of the redundant attributes-->
         <TextView
             android:id="@+id/title"
             android:layout_width="0dp"
@@ -34,8 +36,7 @@
             android:layout_marginTop="16dp"
             android:fontFamily="monospace"
             android:text="@string/about_google_developer_groups"
-            android:textColor="#555555"
-            android:textSize="24sp"
+            style="@style/TextAppearance.Title"
             app:layout_constraintEnd_toStartOf="@+id/end_grid"
             app:layout_constraintStart_toStartOf="@+id/start_grid"
             app:layout_constraintTop_toBottomOf="@id/image" />
@@ -57,6 +58,7 @@
             android:layout_marginTop="13dp"
             android:fontFamily="sans-serif"
             android:text="@string/gdgs_are"
+            style="@style/TextAppearance.Subtitle"
             android:textColor="#555555"
             android:textSize="18sp"
             app:layout_constraintEnd_toStartOf="@id/end_grid"
