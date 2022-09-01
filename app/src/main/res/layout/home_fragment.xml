@@ -40,12 +40,6 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintDimensionRatio="4:3"/>
 
-                <!-- text size is set using scalable pixels -->
-                <!-- the pixels will scale based on the default text size the user configured on their phone -->
-                <!-- you should never use sp for layouts like margin or padding-->
-
-                <!--    apply the appropriate styles to the title and subtitle-->
-                <!--    get rid of the redundant attributes-->
                 <TextView
                     android:id="@+id/title"
                     android:layout_width="0dp"
