@@ -10,14 +10,20 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
+<!--        we want to change the toolbar and any associated children to have a dark theme-->
+<!--        we need to specify the color in the background attribute-->
+<!--        set the image tint to cause the image view to be tinted to a specified color-->
             <androidx.appcompat.widget.Toolbar
                     android:id="@+id/toolbar"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    android:background="?colorPrimaryDark"
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize">
                 <ImageView
                         android:id="@+id/hero_image"
                         android:layout_width="150dp"
                         android:layout_height="match_parent"
+                    android:tint="?colorOnPrimary"
                         app:srcCompat="@drawable/logo"
                         android:contentDescription="@string/app_name"/>
             </androidx.appcompat.widget.Toolbar>
